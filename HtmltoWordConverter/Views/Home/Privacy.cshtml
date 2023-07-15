@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+    Layout = null;
+}
+@*@Html.Raw(ViewBag.htmltext)*@
+@*@Html.Raw(ViewBag.path)*@
+
+
+
+<section id="basic-vertical-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Audit Report</h3>
+                </div>
+                <div class="card-body">
+                    <div style="display: flex; justify-content: center;">
+                        <iframe src="@Url.Content("~/" + ViewBag.companyName)" width="1100px" height="700" marginwidth="50px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
